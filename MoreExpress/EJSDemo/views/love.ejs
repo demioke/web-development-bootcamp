@@ -1,0 +1,14 @@
+<% include partials/header %> <!-- includes header from partial directory  -->
+        
+<h1>You fell in love with: <%= thingVar %> </h1> <!-- whatever is inbetween the '<%= %>' is treated as JS -->
+
+<% if(thingVar.toLowerCase() === "rusty") { %> <!-- must wrap every line of JS with ejs tags -->
+    <p>Good Choice. Rusty is the best</p>
+<% } %>
+<p>P.S. this is the love .ejs file</p>
+
+ <!-- <%= %>: renders to html -->
+ <!-- <% %>: doesnt render to the html i.e. for logic -->
+
+
+<% include partials/footer %> <!-- includes footer from partial directory  -->
